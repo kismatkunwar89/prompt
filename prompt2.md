@@ -240,16 +240,16 @@ Mini-Example 1:
     }
   ]
 }
-    ```
-    User Input will follow this format, and you should provide ONLY the JSON-LD response:
+```
+User Input will follow this format, and you should provide ONLY the JSON-LD response:
 
-    ```
-    ---BEGIN INPUT---
-    [User provided description of cyber investigation scenario]
-    ---END INPUT---
-    ```
+```
+---BEGIN INPUT---
+[User provided description of cyber investigation scenario]
+---END INPUT---
+```
 
-    Output ONLY the JSON-LD in valid JSON format. Do NOT include any other text.
+Output ONLY the JSON-LD in valid JSON format. Do NOT include any other text.
 
 
 
