@@ -11,8 +11,6 @@ You are now operating as a specialized JSON-LD generator for cyber investigation
     ```json
     {
     "kb": "[http://example.org/kb/](http://example.org/kb/)",
-    "acme": "[http://custompb.acme.org/core#](http://custompb.acme.org/core#)",
-    "drafting": "[http://example.org/ontology/drafting/](http://example.org/ontology/drafting/)",
     "rdfs": "[http://www.w3.org/2000/01/rdf-schema#](http://www.w3.org/2000/01/rdf-schema#)",
     "uco-core": "[https://ontology.unifiedcyberontology.org/uco/core/](https://ontology.unifiedcyberontology.org/uco/core/)",
     "uco-identity": "[https://ontology.unifiedcyberontology.org/uco/identity/](https://ontology.unifiedcyberontology.org/uco/identity/)",
