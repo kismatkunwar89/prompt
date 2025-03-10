@@ -11,6 +11,8 @@ You are now operating as a specialized JSON-LD generator for cyber investigation
     ```json
     {
     "kb": "[http://example.org/kb/](http://example.org/kb/)",
+    "acme": "[http://custompb.acme.org/core#](http://custompb.acme.org/core#)",
+    "drafting": "[http://example.org/ontology/drafting/](http://example.org/ontology/drafting/)",
     "rdfs": "[http://www.w3.org/2000/01/rdf-schema#](http://www.w3.org/2000/01/rdf-schema#)",
     "uco-core": "[https://ontology.unifiedcyberontology.org/uco/core/](https://ontology.unifiedcyberontology.org/uco/core/)",
     "uco-identity": "[https://ontology.unifiedcyberontology.org/uco/identity/](https://ontology.unifiedcyberontology.org/uco/identity/)",
@@ -105,15 +107,6 @@ You are now operating as a specialized JSON-LD generator for cyber investigation
     *   If the user input is ambiguous or lacks sufficient information to create a valid UCO-based entity, return a JSON-LD object with an `@type` of `uco-core:Error` and a `uco-core:description` property explaining the issue.
 
 Mini-Example 1:
-
-
-
-
-
-
-
-
-
     Input:
     ```
     ---BEGIN INPUT---
@@ -121,8 +114,9 @@ Mini-Example 1:
     ---END INPUT---
     ```
     Output:
-    ```json
-   {
+
+```json
+{
   "@context": {
     "kb": "http://example.org/kb/",
     "uco-observable": "https://ontology.unifiedcyberontology.org/uco/observable/",
@@ -167,10 +161,9 @@ Mini-Example 1:
       "@id": "kb:contentdata-98765432-10ab-cdef-fedc-ba9876543210",
       "@type": "uco-observable:ContentData",
       "uco-core:hasFacet": {
-          "@type": "uco-observable:ContentDataFacet",
-          "uco-observable:mimeType": "application/x-tar"
+        "@type": "uco-observable:ContentDataFacet",
+        "uco-observable:mimeType": "application/x-tar"
       }
-
     },
     {
       "@id": "kb:relationship-23456789-abcd-ef01-2345-67890abcdef1",
@@ -179,7 +172,7 @@ Mini-Example 1:
       "uco-core:target": "kb:contentdata-f0e1d2c3-b4a5-4697-88bc-9abcdef01234",
       "uco-core:kindOfRelationship": "Extracted_From"
     },
-		{
+    {
       "@id": "kb:file-34567890-bcde-f123-4567-890abcdef123",
       "@type": "uco-observable:File",
       "uco-core:hasFacet": {
@@ -194,9 +187,8 @@ Mini-Example 1:
       "uco-core:source": "kb:file-34567890-bcde-f123-4567-890abcdef123",
       "uco-core:target": "kb:contentdata-98765432-10ab-cdef-fedc-ba9876543210",
       "uco-core:kindOfRelationship": "Contained_Within"
-
     },
-		 {
+    {
       "@id": "kb:contentdata-567890ab-def0-1234-5678-90abcdef1234",
       "@type": "uco-observable:ContentData",
       "uco-core:hasFacet": {
@@ -208,11 +200,11 @@ Mini-Example 1:
       }
     },
     {
-        "@id": "kb:relationship-67890abc-ef01-2345-6789-0abcdef12345",
-        "@type": "uco-observable:ObservableRelationship",
-        "uco-core:source": "kb:contentdata-567890ab-def0-1234-5678-90abcdef1234",
-        "uco-core:target": "kb:file-34567890-bcde-f123-4567-890abcdef123",
-        "uco-core:kindOfRelationship": "Extracted_From"
+      "@id": "kb:relationship-67890abc-ef01-2345-6789-0abcdef12345",
+      "@type": "uco-observable:ObservableRelationship",
+      "uco-core:source": "kb:contentdata-567890ab-def0-1234-5678-90abcdef1234",
+      "uco-core:target": "kb:file-34567890-bcde-f123-4567-890abcdef123",
+      "uco-core:kindOfRelationship": "Extracted_From"
     },
     {
       "@id": "kb:contentdata-7890abcd-f012-3456-7890-abcdef123456",
@@ -240,10 +232,10 @@ Mini-Example 1:
       "uco-core:source": "kb:contentdata-7890abcd-f012-3456-7890-abcdef123456",
       "uco-core:target": "kb:contentdata-567890ab-def0-1234-5678-90abcdef1234",
       "uco-core:kindOfRelationship": "Extracted_From",
-      "uco-core:hasFacet":{
+      "uco-core:hasFacet": {
         "@type": "uco-observable:DataRangeFacet",
-        "uco-observable:rangeOffset" : 45,
-        "uco-observable:rangeSize" : 29
+        "uco-observable:rangeOffset": 45,
+        "uco-observable:rangeSize": 29
       }
     }
   ]
