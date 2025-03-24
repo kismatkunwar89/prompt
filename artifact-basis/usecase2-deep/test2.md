@@ -192,11 +192,14 @@ Artifact 6: confidential.lnk
     }
   ]
 }
+
+```
+
 Here is the JSON-LD output based on your scenario. Would you like to make any changes? Please validate the output using case_validate from the case_utils package to ensure compliance with the CASE/UCO ontology.
 
 Here is a generic SPARQL query to detect timestamp inconsistencies where a .lnk file references a target file but was created before the target file existed. This query flags potential anti-forensics artifacts:
 
-sparql
+```sparql
 Copy
 PREFIX uco-core: <https://ontology.unifiedcyberontology.org/uco/core/>
 PREFIX uco-observable: <https://ontology.unifiedcyberontology.org/uco/observable/>
@@ -226,6 +229,7 @@ WHERE {
   # Filter for cases where the .lnk file was created before the target file
   FILTER (?lnkCreationTime < ?targetCreationTime)
 }
+```
 Explanation of the Query:
 Identify .lnk Files:
 
