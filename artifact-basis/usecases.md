@@ -155,10 +155,12 @@ During a digital forensics investigation, an investigator identified potential s
 manipulation on a Windows system. The USNJRNL (Update Sequence Number Journal) was analyzed, and the following artifacts  were extracted were suspicious
 
 Test 1 : only one test as both has similar structure
+
 Artifact 1: USN Record 
 Update Sequence Number (USN): 287563224
 Timestamp: 2025-02-18T10:15:00
 Update Reason: FileCreate
+
 Artifact 2: USN Record
 Update Sequence Number (USN): 287563230 
 Timestamp: 2025-02-14T10:16:00
