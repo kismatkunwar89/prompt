@@ -48,6 +48,8 @@ The file ccsetup.exe was **not found** in this directory or anywhere else on the
 
 
 ******************************USE CASE 2********************************************************
+
+
 During a forensic investigation of a Windows NTFS system, the Master File Table (C:\$MFT) was parsed. Investigators extracted several file records linked to the user profile `C:\Users\Alice\`.
 
 Multiple `.lnk` shortcut files and their associated targets were identified across distinct MFT records. Most shortcut relationships were timestamp-consistent. However, one `.lnk` file referencing `password.docx` was created **before** the target file existed, suggesting a possible anti-forensics artifact.
