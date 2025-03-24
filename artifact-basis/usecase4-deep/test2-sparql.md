@@ -1,4 +1,4 @@
-Provide a generic sparql to flag this inconsistecny the timestamp of the second USN record is earlier than the first USN record which is not possible in a normal sequence of events.
+"Provide a generic sparql to flag this inconsistecny the timestamp of the second USN record is earlier than the first USN record which is not possible in a normal sequence of events."
 Here is a generic SPARQL query to flag inconsistencies where the timestamp of the second USN record is earlier than the first USN record. This query assumes that the USN records are modeled as uco-observable:ObservableObject with a custom facet (custom:WindowsUSNFacet) and that the timestamps are stored using the uco-observable:observableCreatedTime property.
 
 
