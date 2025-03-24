@@ -137,7 +137,7 @@ Copy
     }
   ]
 }
-
+```
 Here is the JSON-LD output based on your scenario. Would you like to make any changes? Please validate the output using case_validate from the case_utils package to ensure compliance with the CASE/UCO ontology.
 
 fix case_validate case1.1.jsonld
@@ -172,7 +172,7 @@ The validation errors indicate that the PrefetchFacet class and its properties (
 
 Here’s the corrected JSON-LD:
 
-json
+```json
 Copy
 {
   "@context": {
@@ -296,6 +296,7 @@ Copy
     }
   ]
 }
+```
 Key Fixes:
 Custom Facet Definition:
 
@@ -360,6 +361,7 @@ WHERE {
       uco-observable:filePath ?referencedExecutablePath .
   }
 }
+```
 Explanation of the Query:
 Prefetch File Binding:
 
