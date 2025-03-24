@@ -31,6 +31,7 @@ WHERE {
   # Flag inconsistencies where the second timestamp is earlier than the first
   FILTER (?timestamp2 < ?timestamp1)
 }
+```
 Explanation:
 Retrieve USN Records:
 
@@ -62,7 +63,7 @@ You are correct! The expected behavior for USN records is that as the USN value 
 Here’s an updated SPARQL query that validates this behavior across all USN records in the dataset:
 
 Updated SPARQL Query:
-sparql
+```sparql
 Copy
 PREFIX uco-core: <https://ontology.unifiedcyberontology.org/uco/core/>
 PREFIX uco-observable: <https://ontology.unifiedcyberontology.org/uco/observable/>
@@ -91,6 +92,8 @@ WHERE {
   # Flag inconsistencies where the second timestamp is earlier than the first
   FILTER (?timestamp2 < ?timestamp1)
 }
+
+```
 Key Improvements:
 USN Value Comparison:
 
