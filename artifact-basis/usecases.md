@@ -1,4 +1,4 @@
-******************************USE CASE 1********************************************************
+*****USE CASE 1********************************************************
 
 Test 1
 During a digital forensics investigation, among many prefetch files , two suspicious Prefetch files were discovered in C:\Windows\Prefetch\
