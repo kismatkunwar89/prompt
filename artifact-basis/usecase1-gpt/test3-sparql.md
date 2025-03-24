@@ -142,7 +142,7 @@ Here is the JSON-LD output based on your scenario.
 Would you like to make any changes?
 Please validate the output using case_validate from the case_utils package to ensure compliance with the CASE/UCO ontology.
 Even if validation returns errors, I will revise the output while strictly following the ontology rules.
-```json
+```
 
 you said
 
@@ -186,4 +186,4 @@ WHERE {
     FILTER(LCASE(?referencedName) = LCASE(?actualName))
   }
 }
-
+```
