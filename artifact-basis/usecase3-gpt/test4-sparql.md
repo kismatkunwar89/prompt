@@ -1,5 +1,5 @@
 Here's a generic SPARQL query designed to detect inconsistencies where a successful Windows logon event exists for a user (e.g., john.doe), but no matching profile folder exists under C:\Users\.
-
+```
 This query assumes:
 
 Logon events are modeled using a custom facet (acme:WindowsLogonEventFacet) with acme:accountName.
@@ -34,6 +34,7 @@ WHERE {
     FILTER regex(?path, CONCAT("^C:\\\\Users\\\\", ?accountName, "$"), "i")
   }
 }
+```
 💡 Result
 This query returns usernames that:
 
@@ -49,7 +50,7 @@ You said:
 now  generate an generic sparql to detect inconsistency john doe user was still present in the system's registry account list.  but no corresponding user profile folder existed
 ChatGPT said:
 Here’s a generic SPARQL query to detect the inconsistency where a username (e.g., john.doe) is present in the Windows Registry under SAM\\Domains\\Account\\Users\\Names, but no corresponding C:\Users\john.doe profile folder exists.
-
+```
 ✅ SPARQL Query to Detect Users in Registry but Missing Profile Folder
 sparql
 Copy
@@ -83,6 +84,7 @@ WHERE {
     FILTER regex(?dirPath, CONCAT("^C:\\\\Users\\\\", ?username, "$"), "i")
   }
 }
+```
 🧠 What This Detects
 Finds users listed in the registry account list (under HKEY_LOCAL_MACHINE\SAM\...).
 Checks if their profile directory is missing under C:\Users\.
@@ -102,7 +104,7 @@ Had a successful logon event (eventID = 4624),
 OR are present in the Windows Registry account list,
 BUT have no corresponding C:\Users\<username> directory.
 ✅ Combined SPARQL Query
-sparql
+```sparql
 Copy
 Edit
 PREFIX uco-core: <https://ontology.unifiedcyberontology.org/uco/core/>
@@ -143,6 +145,8 @@ WHERE {
     FILTER regex(?dirPath, CONCAT("^C:\\\\Users\\\\", ?username, "$"), "i")
   }
 }
+
+```
 🔍 What This Catches
 Any ?username that is:
 Logged on (event 4624), or
