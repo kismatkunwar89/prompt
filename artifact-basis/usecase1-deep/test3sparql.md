@@ -137,6 +137,7 @@ Copy
     }
   ]
 }
+
 Here is the JSON-LD output based on your scenario. Would you like to make any changes? Please validate the output using case_validate from the case_utils package to ensure compliance with the CASE/UCO ontology.
 
 fix case_validate case1.1.jsonld
@@ -327,7 +328,7 @@ Return cases where the executable file is missing.
 
 Here’s the SPARQL query:
 
-sparql
+```sparql
 Copy
 PREFIX kb: <http://example.org/kb/>
 PREFIX uco-core: <https://ontology.unifiedcyberontology.org/uco/core/>
