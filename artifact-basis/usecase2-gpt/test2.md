@@ -218,7 +218,7 @@ generate an generic sparql to flag contradiction to detect timestamp inconsisten
 ChatGPT said:
 Here is a generic SPARQL query that detects timestamp inconsistencies where a .lnk file references another file (e.g., password.docx) but was created before the referenced target file. This is useful for flagging potential anti-forensics artifacts:
 
-Copy
+```
 Edit
 PREFIX uco-core: <https://ontology.unifiedcyberontology.org/uco/core/>
 PREFIX uco-observable: <https://ontology.unifiedcyberontology.org/uco/observable/>
