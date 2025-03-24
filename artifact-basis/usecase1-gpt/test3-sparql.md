@@ -153,7 +153,7 @@ Here is a SPARQL query that generalizes the condition:
 It identifies Prefetch files (modeled with a custom acme:PrefetchFacet) whose recorded execution paths refer to files located in a specific directory (e.g., C:\Users\Public\Downloads\).
 It checks whether the referenced executable exists as a File entity in the knowledge base.
 It returns Prefetch files that reference executables not present in the directory.
-sparql
+```sparql
 Copy
 Edit
 PREFIX kb: <http://example.org/kb/>
