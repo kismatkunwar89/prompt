@@ -64,7 +64,7 @@ Copy
     }
   ]
 }
-```
+
 Here is the JSON-LD output based on your scenario. Would you like to make any changes?
 
 fix case_validate locationdeep-prompt2.jsonld
