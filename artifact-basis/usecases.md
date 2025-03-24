@@ -1,4 +1,4 @@
-Usecase1
+******************************USE CASE 1********************************************************
 
 Test 1
 During a digital forensics investigation, among many prefetch files , two suspicious Prefetch files were discovered in C:\Windows\Prefetch\
@@ -47,8 +47,7 @@ After analyzing prefetch files ,  the directory C:\Users\Public\Downloads\ was e
 The file ccsetup.exe was **not found** in this directory or anywhere else on the system.
 
 
-Use Case 2
-
+******************************USE CASE 2********************************************************
 During a forensic investigation of a Windows NTFS system, the Master File Table (C:\$MFT) was parsed. Investigators extracted several file records linked to the user profile `C:\Users\Alice\`.
 
 Multiple `.lnk` shortcut files and their associated targets were identified across distinct MFT records. Most shortcut relationships were timestamp-consistent. However, one `.lnk` file referencing `password.docx` was created **before** the target file existed, suggesting a possible anti-forensics artifact.
@@ -110,7 +109,7 @@ Artifact 6: confidential.lnk
 - Local Base Path (parsed from LNK metadata): C:\Users\Alice\Desktop\confidential.txt  
 
 
-Use case 3 
+******************************USE CASE 3********************************************************
 
 During a digital forensics investigation of a Windows system, inconsistencies were identified suggesting the deletion of a user profile. A successful interactive logon was recorded for the username john.doe and the user was still present in the system's registry account list.
 , but no corresponding user profile folder existed (suspected to have been deleted).
@@ -148,10 +147,12 @@ Artifact 2: SAM Registry Hive (Local Accounts)
 - **No folder found for**: `john.doe`
 
 
-Case4
+******************************USE CASE 4********************************************************
 
-During a digital forensics investigation, an investigator identified potential system timestamp manipulation on a Windows system. The USNJRNL (Update Sequence Number Journal) was analyzed, and the following artifacts  were extracted were suspicious
+During a digital forensics investigation, an investigator identified potential system timestamp
+manipulation on a Windows system. The USNJRNL (Update Sequence Number Journal) was analyzed, and the following artifacts  were extracted were suspicious
 
+Test 1 : only one test as both has similar structure
 Artifact 1: USN Record 
 Update Sequence Number (USN): 287563224
 Timestamp: 2025-02-18T10:15:00
