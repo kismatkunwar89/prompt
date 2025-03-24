@@ -3,7 +3,7 @@ Provide a generic sparql to flag this inconsistecny the timestamp of the second 
 ChatGPT said:
 Here is a generic SPARQL query that detects inconsistencies where a USN record with a higher updateSequenceNumber has an earlier timestamp than one with a lower updateSequenceNumber. This assumes the use of a custom facet named acme:UsnRecordFacet with structured properties.
 
-sparql
+```sparql
 Copy
 Edit
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -26,6 +26,8 @@ WHERE {
   FILTER(?usn2 > ?usn1)
   FILTER(xsd:dateTime(?time2) < xsd:dateTime(?time1))
 }
+```
+
 What it does:
 It compares pairs of USN records.
 Flags when a later USN (higher number) has a timestamp earlier than a previous one.
@@ -40,7 +42,7 @@ ChatGPT said:
 Thanks — here’s a corrected version of the SPARQL query. The issue likely stems from missing rdf:type or incorrect use of the acme: prefix. Let's make it fully generic, without assuming a base IRI for acme:. We'll use only the triple structure and check facet type using rdf:type.
 
 ✅ Updated SPARQL Query (Robust & Result-Yielding):
-sparql
+```sparql
 Copy
 Edit
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -70,6 +72,7 @@ WHERE {
   FILTER(?usn2 > ?usn1)
   FILTER(xsd:dateTime(?time2) < xsd:dateTime(?time1))
 }
+```
 Notes:
 This assumes your custom acme:UsnRecordFacet class is defined under http://example.org/kb/UsnRecordFacet.
 The property IRIs updateSequenceNumber and recordTimestamp must be defined using full URIs like http://example.org/kb/updateSequenceNumber.
