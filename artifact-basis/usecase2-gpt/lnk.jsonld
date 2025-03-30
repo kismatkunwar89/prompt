@@ -1,0 +1,49 @@
+{
+    "@context": {
+      "kb": "http://example.org/kb/",
+      "uco-core": "https://ontology.unifiedcyberontology.org/uco/core/",
+      "uco-observable": "https://ontology.unifiedcyberontology.org/uco/observable/",
+      "uco-types": "https://ontology.unifiedcyberontology.org/uco/types/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "acme": "http://example.org/custom#"
+    },
+    "@graph": [
+      {
+        "@id": "kb:file-9dfb6574-1d17-4321-a68c-04b7d90dca00",
+        "@type": "uco-observable:File",
+        "uco-core:hasFacet": [
+          {
+            "@id": "kb:filefacet-c7894c2e-d59a-49cf-875d-0b3022c87e5a",
+            "@type": "uco-observable:FileFacet",
+            "uco-observable:fileName": "important.lnk",
+            "uco-observable:filePath": "C:\\Users\\dfirrocks\\AppData\\Roaming\\Microsoft\\Windows\\Recent\\important.lnk",
+            "uco-observable:extension": "lnk",
+            "uco-observable:sizeInBytes": 610,
+            "uco-observable:observableCreatedTime": {
+              "@type": "xsd:dateTime",
+              "@value": "2025-03-28T13:42:36Z"
+            },
+            "uco-observable:modifiedTime": {
+              "@type": "xsd:dateTime",
+              "@value": "2025-03-28T13:42:36Z"
+            },
+            "uco-observable:accessedTime": {
+              "@type": "xsd:dateTime",
+              "@value": "2025-03-29T00:00:00Z"
+            }
+          },
+          {
+            "@id": "kb:lnkfacet-e1f64a33-6c95-4e90-8709-390ea11f6f24",
+            "@type": [
+              "acme:LnkFacet",
+              "uco-core:Facet"
+            ],
+            "acme:targetPath": "C:\\Users\\dfirrocks\\Desktop\\Important\\important.docx",
+            "acme:targetFileName": "important.docx",
+            "acme:source": "lnk metadata"
+          }
+        ]
+      }
+    ]
+  }
+  
