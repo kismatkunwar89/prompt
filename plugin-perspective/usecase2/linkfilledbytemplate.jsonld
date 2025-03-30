@@ -1,0 +1,85 @@
+{
+    "@context": {
+      "kb": "http://example.org/kb/",
+      "uco-core": "https://ontology.unifiedcyberontology.org/uco/core/",
+      "uco-observable": "https://ontology.unifiedcyberontology.org/uco/observable/",
+      "uco-types": "https://ontology.unifiedcyberontology.org/uco/types/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "acme": "http://example.org/custom#"
+    },
+    "@graph": [
+      {
+        "@id": "kb:file-769bead4-61b2-40e9-83b3-6b9f4f3df7cc",
+        "@type": "uco-observable:File",
+        "uco-core:hasFacet": [
+          {
+            "@id": "kb:filefacet-30971643-b299-4e1f-9814-917b5737f4d5",
+            "@type": "uco-observable:FileFacet",
+            "uco-observable:fileName": "important.lnk",
+            "uco-observable:filePath": "C:\\Users\\rocks\\AppData\\Roaming\\Microsoft\\Windows\\Recent\\important.lnk",
+            "uco-observable:extension": "lnk",
+            "uco-observable:sizeInBytes": 610,
+            "uco-observable:observableCreatedTime": {
+              "@type": "xsd:dateTime",
+              "@value": "2025-03-28T20:42:36Z"
+            },
+            "uco-observable:modifiedTime": {
+              "@type": "xsd:dateTime",
+              "@value": "2025-03-28T20:42:36Z"
+            },
+            "uco-observable:accessedTime": {
+              "@type": "xsd:dateTime",
+              "@value": "2025-03-29T00:00:00Z"
+            }
+          },
+          {
+            "@id": "kb:lnkfacet-274a3127-c172-4c29-a6ef-06d2a933ff89",
+            "@type": [
+              "acme:LnkFacet",
+              "uco-core:Facet"
+            ],
+            "acme:targetPath": "C:\\Users\\rocks\\Desktop\\Important\\important.docx",
+            "acme:targetFileName": "important.docx",
+            "acme:source": "lnk metadata"
+          }
+        ]
+      },
+      {
+        "@id": "kb:file-f7d4b127-2f84-41c3-bba3-994d688d6746",
+        "@type": "uco-observable:File",
+        "uco-core:hasFacet": [
+          {
+            "@id": "kb:filefacet-75e7c35d-4e69-4b0b-bcb5-753c1dfe871d",
+            "@type": "uco-observable:FileFacet",
+            "uco-observable:fileName": "data.lnk",
+            "uco-observable:filePath": "C:\\Users\\dfirrocks\\AppData\\Roaming\\Microsoft\\Windows\\Recent\\data.lnk",
+            "uco-observable:extension": "lnk",
+            "uco-observable:sizeInBytes": 688,
+            "uco-observable:observableCreatedTime": {
+              "@type": "xsd:dateTime",
+              "@value": "2025-03-28T20:50:42Z"
+            },
+            "uco-observable:modifiedTime": {
+              "@type": "xsd:dateTime",
+              "@value": "2025-03-28T20:50:42Z"
+            },
+            "uco-observable:accessedTime": {
+              "@type": "xsd:dateTime",
+              "@value": "2025-03-29T00:00:00Z"
+            }
+          },
+          {
+            "@id": "kb:lnkfacet-7df5e697-c330-40e0-8d6a-7c3d53e20cb4",
+            "@type": [
+              "acme:LnkFacet",
+              "uco-core:Facet"
+            ],
+            "acme:targetPath": "C:\\Users\\dfirrocks\\Desktop\\Important\\data.xlsx",
+            "acme:targetFileName": "data.xlsx",
+            "acme:source": "lnk metadata"
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,29 @@
+PREFIX uco-observable: <https://ontology.unifiedcyberontology.org/uco/observable/>
+PREFIX uco-core: <https://ontology.unifiedcyberontology.org/uco/core/>
+PREFIX acme: <http://example.org/custom#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?lnkFile ?lnkTargetPath ?lnkCreatedTime ?targetFile ?targetCreatedTime
+WHERE {
+  GRAPH <http://example.org/case2/artifact2-lnk> {
+    ?lnkFile a uco-observable:File ;
+             uco-core:hasFacet ?lnkFacet, ?lnkFileFacet .
+
+    ?lnkFacet a acme:LnkFacet ;
+              acme:targetPath ?lnkTargetPath .
+
+    ?lnkFileFacet a uco-observable:FileFacet ;
+                  uco-observable:observableCreatedTime ?lnkCreatedTime .
+  }
+
+  GRAPH <http://example.org/case2/artifact1-mft> {
+    ?targetFile a uco-observable:File ;
+                uco-core:hasFacet ?targetFacet .
+
+    ?targetFacet a uco-observable:FileFacet ;
+                 uco-observable:filePath ?lnkTargetPath ;
+                 uco-observable:observableCreatedTime ?targetCreatedTime .
+  }
+
+  FILTER(xsd:dateTime(?lnkCreatedTime) < xsd:dateTime(?targetCreatedTime))
+}

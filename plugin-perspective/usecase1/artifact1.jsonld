@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "kb": "http://example.org/kb/",
+    "uco-core": "https://ontology.unifiedcyberontology.org/uco/core/",
+    "uco-observable": "https://ontology.unifiedcyberontology.org/uco/observable/",
+    "uco-types": "https://ontology.unifiedcyberontology.org/uco/types/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "acme": "http://example.org/custom#"
+  },
+  "@graph": [
+    {
+      "@id": "kb:file-2e9dcba1-cf29-4962-84d7-58f70979589f",
+      "@type": "uco-observable:File",
+      "uco-core:hasFacet": [
+        {
+          "@id": "kb:filefacet-a0c6727a-8fd4-4dc8-bbfc-8b0cc4e4ec55",
+          "@type": "uco-observable:FileFacet",
+          "uco-observable:fileName": "CCSETUP.EXE-8F9E1A2B.pf",
+          "uco-observable:filePath": "C:\\Windows\\Prefetch"
+        },
+        {
+          "@id": "kb:prefetchfacet-4ad75cf9-e6a1-408d-90b5-4e73f4f61df7",
+          "@type": [
+            "acme:PrefetchFacet",
+            "uco-core:Facet"
+          ],
+          "acme:processExecutable": "ccsetup.exe",
+          "acme:processPath": "C:\\Users\\Public\\Downloads\\ccsetup.exe"
+        }
+      ]
+    },
+    {
+      "@id": "kb:file-980fb2b2-8dcf-4044-9eaf-0f9a58702ac7",
+      "@type": "uco-observable:File",
+      "uco-core:hasFacet": [
+        {
+          "@id": "kb:filefacet-efad3b5a-96fc-4b2a-a4a7-9d8d8d637e25",
+          "@type": "uco-observable:FileFacet",
+          "uco-observable:fileName": "TEAMVIEWER_SETUP.EXE-4A1B2C3D.pf",
+          "uco-observable:filePath": "C:\\Windows\\Prefetch"
+        },
+        {
+          "@id": "kb:prefetchfacet-702fa7b2-31d3-4f8a-937e-c7e6b5e8a5be",
+          "@type": [
+            "acme:PrefetchFacet",
+            "uco-core:Facet"
+          ],
+          "acme:processExecutable": "TeamViewer_Setup.exe",
+          "acme:processPath": "C:\\Temp\\Installers\\TeamViewer_Setup.exe"
+        }
+      ]
+    }
+  ]
+}
+
+

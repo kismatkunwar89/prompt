@@ -1,0 +1,69 @@
+{
+  "@context": {
+    "kb": "http://example.org/kb/",
+    "uco-core": "https://ontology.unifiedcyberontology.org/uco/core/",
+    "uco-observable": "https://ontology.unifiedcyberontology.org/uco/observable/",
+    "uco-types": "https://ontology.unifiedcyberontology.org/uco/types/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "kb:file-8f58f4d0-d6d7-4bb6-b267-7b07cd18c0cb",
+      "@type": "uco-observable:File",
+      "uco-core:hasFacet": [
+        {
+          "@id": "kb:filefacet-5d1a99c3-7e1f-4415-b46b-2396dd830e8c",
+          "@type": "uco-observable:FileFacet",
+          "uco-observable:fileName": "winword.exe.db-shm",
+          "uco-observable:extension": "db-shm",
+          "uco-observable:filePath": ".\\Users\\ktams\\AppData\\Local\\Microsoft\\Office\\OTele\\",
+          "uco-observable:isDirectory": false,
+          "uco-observable:sizeInBytes": 32768,
+          "uco-observable:observableCreatedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-29T17:29:00Z"
+          },
+          "uco-observable:modifiedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-29T18:24:00Z"
+          },
+          "uco-observable:accessedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-29T17:29:00Z"
+          }
+        },
+        {
+          "@id": "kb:mftfacet-178c62c1-e27a-4c89-8dbb-4e68b44fae8b",
+          "@type": "uco-observable:MftRecordFacet",
+          "uco-observable:mftFileID": 247818,
+          "uco-observable:mftFlags": 32,
+          "uco-observable:mftParentID": 0,
+          "uco-observable:ntfsHardLinkCount": 1,
+          "uco-observable:ntfsOwnerSID": "2013",
+          "uco-observable:mftRecordChangeTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-29T18:24:00Z"
+          },
+          "uco-observable:mftFileNameModifiedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-29T17:29:00Z"
+          },
+          "uco-observable:mftFileNameAccessedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-29T18:24:00Z"
+          },
+          "uco-observable:mftFileNameCreatedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-29T17:29:00Z"
+          },
+          "uco-observable:mftFileNameRecordChangeTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-29T18:24:00Z"
+          },
+          "uco-observable:mftFileNameLength": 20
+        }
+      ]
+    }
+  ]
+}
+

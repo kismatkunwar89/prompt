@@ -1,0 +1,23 @@
+PREFIX acme: <http://example.org/custom#>
+PREFIX uco-observable: <https://ontology.unifiedcyberontology.org/uco/observable/>
+PREFIX uco-core: <https://ontology.unifiedcyberontology.org/uco/core/>
+
+SELECT DISTINCT ?executable ?path
+WHERE {
+  GRAPH <http://example.org/temp/artifact1> {
+    ?prefetchFile a uco-observable:File ;
+                  uco-core:hasFacet ?prefetchFacet .
+    ?prefetchFacet a acme:PrefetchFacet ;
+                   acme:processExecutable ?executable ;
+                   acme:processPath ?path .
+  }
+
+  FILTER NOT EXISTS {
+    GRAPH <http://example.org/temp/artifact3> {
+      ?mftFile a uco-observable:File ;
+               uco-core:hasFacet ?fileFacet .
+      ?fileFacet a uco-observable:FileFacet ;
+                 uco-observable:filePath ?path .
+    }
+  }
+}

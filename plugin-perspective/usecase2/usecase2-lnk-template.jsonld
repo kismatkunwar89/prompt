@@ -1,0 +1,85 @@
+{
+    "@context": {
+      "kb": "http://example.org/kb/",
+      "uco-core": "https://ontology.unifiedcyberontology.org/uco/core/",
+      "uco-observable": "https://ontology.unifiedcyberontology.org/uco/observable/",
+      "uco-types": "https://ontology.unifiedcyberontology.org/uco/types/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "acme": "http://example.org/custom#"
+    },
+    "@graph": [
+      {
+        "@id": "kb:{{file-id-1}}",
+        "@type": "uco-observable:File",
+        "uco-core:hasFacet": [
+          {
+            "@id": "kb:{{filefacet-id-1}}",
+            "@type": "uco-observable:FileFacet",
+            "uco-observable:fileName": "{{lnk-file-name-1}}",
+            "uco-observable:filePath": "{{lnk-file-path-1}}",
+            "uco-observable:extension": "lnk",
+            "uco-observable:sizeInBytes": {{lnk-size-bytes-1}},
+            "uco-observable:observableCreatedTime": {
+              "@type": "xsd:dateTime",
+              "@value": "{{lnk-created-utc-1}}"
+            },
+            "uco-observable:modifiedTime": {
+              "@type": "xsd:dateTime",
+              "@value": "{{lnk-modified-utc-1}}"
+            },
+            "uco-observable:accessedTime": {
+              "@type": "xsd:dateTime",
+              "@value": "{{lnk-accessed-utc-1}}"
+            }
+          },
+          {
+            "@id": "kb:{{lnkfacet-id-1}}",
+            "@type": [
+              "acme:LnkFacet",
+              "uco-core:Facet"
+            ],
+            "acme:targetPath": "{{target-path-1}}",
+            "acme:targetFileName": "{{target-filename-1}}",
+            "acme:source": "lnk metadata"
+          }
+        ]
+      },
+      {
+        "@id": "kb:{{file-id-2}}",
+        "@type": "uco-observable:File",
+        "uco-core:hasFacet": [
+          {
+            "@id": "kb:{{filefacet-id-2}}",
+            "@type": "uco-observable:FileFacet",
+            "uco-observable:fileName": "{{lnk-file-name-2}}",
+            "uco-observable:filePath": "{{lnk-file-path-2}}",
+            "uco-observable:extension": "lnk",
+            "uco-observable:sizeInBytes": {{lnk-size-bytes-2}},
+            "uco-observable:observableCreatedTime": {
+              "@type": "xsd:dateTime",
+              "@value": "{{lnk-created-utc-2}}"
+            },
+            "uco-observable:modifiedTime": {
+              "@type": "xsd:dateTime",
+              "@value": "{{lnk-modified-utc-2}}"
+            },
+            "uco-observable:accessedTime": {
+              "@type": "xsd:dateTime",
+              "@value": "{{lnk-accessed-utc-2}}"
+            }
+          },
+          {
+            "@id": "kb:{{lnkfacet-id-2}}",
+            "@type": [
+              "acme:LnkFacet",
+              "uco-core:Facet"
+            ],
+            "acme:targetPath": "{{target-path-2}}",
+            "acme:targetFileName": "{{target-filename-2}}",
+            "acme:source": "lnk metadata"
+          }
+        ]
+      }
+    ]
+  }
+  

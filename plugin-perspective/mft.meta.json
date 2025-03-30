@@ -1,0 +1,10 @@
+{
+    "ioc-id": "usecase-mft-records",
+    "ioc-category": "supporting-artifact",
+    "artifact-type": "MFT",
+    "description": "Provides structured representation of file records from NTFS Master File Table, including timestamps, flags, and identifiers.",
+    "expected-graph-type": "array",
+    "jsonld-template": "usecase-mft-template.jsonld",
+    "sparql-rule": null
+  }
+  

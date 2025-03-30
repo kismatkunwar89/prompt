@@ -1,0 +1,95 @@
+{
+  "@context": {
+    "kb": "http://example.org/kb/",
+    "uco-core": "https://ontology.unifiedcyberontology.org/uco/core/",
+    "uco-observable": "https://ontology.unifiedcyberontology.org/uco/observable/",
+    "uco-types": "https://ontology.unifiedcyberontology.org/uco/types/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "kb:file-1a2b3c4d-1111-2222-3333-444455556666",
+      "@type": "uco-observable:File",
+      "uco-core:hasFacet": [
+        {
+          "@id": "kb:filefacet-1a2b3c4d-aaaa-bbbb-cccc-111122223333",
+          "@type": "uco-observable:FileFacet",
+          "uco-observable:fileName": "TeamViewer_Setup.exe",
+          "uco-observable:filePath": "C:\\Temp\\Installers\\TeamViewer_Setup.exe"
+        }
+      ]
+    },
+    {
+      "@id": "kb:file-2b3c4d5e-1111-2222-3333-444455556666",
+      "@type": "uco-observable:File",
+      "uco-core:hasFacet": [
+        {
+          "@id": "kb:filefacet-2b3c4d5e-aaaa-bbbb-cccc-111122223333",
+          "@type": "uco-observable:FileFacet",
+          "uco-observable:fileName": "chrome_installer.exe",
+          "uco-observable:filePath": "C:\\Users\\Public\\Downloads\\chrome_installer.exe"
+        }
+      ]
+    },
+    {
+      "@id": "kb:file-3c4d5e6f-1111-2222-3333-444455556666",
+      "@type": "uco-observable:File",
+      "uco-core:hasFacet": [
+        {
+          "@id": "kb:filefacet-3c4d5e6f-aaaa-bbbb-cccc-111122223333",
+          "@type": "uco-observable:FileFacet",
+          "uco-observable:fileName": "7z2301.exe",
+          "uco-observable:filePath": "C:\\Users\\Public\\Downloads\\7z2301.exe"
+        }
+      ]
+    },
+    {
+      "@id": "kb:file-4d5e6f70-1111-2222-3333-444455556666",
+      "@type": "uco-observable:File",
+      "uco-core:hasFacet": [
+        {
+          "@id": "kb:filefacet-4d5e6f70-aaaa-bbbb-cccc-111122223333",
+          "@type": "uco-observable:FileFacet",
+          "uco-observable:fileName": "readme.txt",
+          "uco-observable:filePath": "C:\\Users\\Public\\Downloads\\readme.txt"
+        }
+      ]
+    },
+    {
+      "@id": "kb:file-5e6f7081-1111-2222-3333-444455556666",
+      "@type": "uco-observable:File",
+      "uco-core:hasFacet": [
+        {
+          "@id": "kb:filefacet-5e6f7081-aaaa-bbbb-cccc-111122223333",
+          "@type": "uco-observable:FileFacet",
+          "uco-observable:fileName": "report.pdf",
+          "uco-observable:filePath": "C:\\Users\\Public\\Downloads\\report.pdf"
+        }
+      ]
+    },
+    {
+      "@id": "kb:file-6f708192-1111-2222-3333-444455556666",
+      "@type": "uco-observable:File",
+      "uco-core:hasFacet": [
+        {
+          "@id": "kb:filefacet-6f708192-aaaa-bbbb-cccc-111122223333",
+          "@type": "uco-observable:FileFacet",
+          "uco-observable:fileName": "installer_notes.txt",
+          "uco-observable:filePath": "C:\\Temp\\Installers\\installer_notes.txt"
+        }
+      ]
+    },
+    {
+      "@id": "kb:file-708192a3-1111-2222-3333-444455556666",
+      "@type": "uco-observable:File",
+      "uco-core:hasFacet": [
+        {
+          "@id": "kb:filefacet-708192a3-aaaa-bbbb-cccc-111122223333",
+          "@type": "uco-observable:FileFacet",
+          "uco-observable:fileName": "setupguide.pdf",
+          "uco-observable:filePath": "C:\\Temp\\Installers\\setupguide.pdf"
+        }
+      ]
+    }
+  ]
+}

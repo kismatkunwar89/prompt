@@ -1,0 +1,502 @@
+{
+  "@context": {
+    "kb": "http://example.org/kb/",
+    "uco-core": "https://ontology.unifiedcyberontology.org/uco/core/",
+    "uco-observable": "https://ontology.unifiedcyberontology.org/uco/observable/",
+    "uco-types": "https://ontology.unifiedcyberontology.org/uco/types/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "acme": "http://example.org/custom/"
+  },
+  "@graph": [
+    {
+      "@id": "kb:file-1a2b3c4d-1111-2222-3333-444455556666",
+      "@type": "uco-observable:File",
+      "uco-core:hasFacet": [
+        {
+          "@id": "kb:filefacet-9ab4f47f-ecc3-4f88-92f7-5259262a0f83",
+          "@type": "uco-observable:FileFacet",
+          "uco-observable:fileName": "TeamViewer_Setup.exe",
+          "uco-observable:extension": "exe",
+          "uco-observable:filePath": "C:\\Temp\\Installers\\TeamViewer_Setup.exe",
+          "uco-observable:isDirectory": false,
+          "uco-observable:sizeInBytes": 32768,
+          "uco-observable:observableCreatedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T10:00:00Z"
+          },
+          "uco-observable:modifiedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T10:15:00Z"
+          },
+          "uco-observable:accessedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T10:10:00Z"
+          }
+        },
+        {
+          "@id": "kb:mftfacet-99d43e75-22bf-4521-a74b-1bf1acd2661c",
+          "@type": "uco-observable:MftRecordFacet",
+          "uco-observable:mftFileID": 200000,
+          "uco-observable:mftFlags": 32,
+          "uco-observable:mftParentID": 1000,
+          "uco-observable:ntfsHardLinkCount": 1,
+          "uco-observable:ntfsOwnerSID": "2000",
+          "uco-observable:mftRecordChangeTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T10:20:00Z"
+          },
+          "uco-observable:mftFileNameCreatedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T10:00:00Z"
+          },
+          "uco-observable:mftFileNameModifiedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T10:15:00Z"
+          },
+          "uco-observable:mftFileNameAccessedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T10:10:00Z"
+          },
+          "uco-observable:mftFileNameRecordChangeTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T10:20:00Z"
+          },
+          "uco-observable:mftFileNameLength": 20
+        },
+        {
+          "@id": "kb:mftdetailsfacet-f329d635-46a0-4c78-8c37-875ea87ae70a",
+          "@type": [
+            "acme:MFTDetailsFacet",
+            "uco-core:Facet"
+          ],
+          "acme:sequenceNumber": 1,
+          "acme:inUse": false,
+          "acme:hasADS": false,
+          "acme:ntfsNameType": "Windows",
+          "acme:updateSequenceNumber": 362950628,
+          "acme:logfileSequenceNumber": 1958682846
+        }
+      ]
+    },
+    {
+      "@id": "kb:file-2b3c4d5e-1111-2222-3333-444455556666",
+      "@type": "uco-observable:File",
+      "uco-core:hasFacet": [
+        {
+          "@id": "kb:filefacet-2d623748-1a52-45c4-9906-c94ce1a7ed3e",
+          "@type": "uco-observable:FileFacet",
+          "uco-observable:fileName": "chrome_installer.exe",
+          "uco-observable:extension": "exe",
+          "uco-observable:filePath": "C:\\Users\\Public\\Downloads\\chrome_installer.exe",
+          "uco-observable:isDirectory": false,
+          "uco-observable:sizeInBytes": 32768,
+          "uco-observable:observableCreatedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T11:00:00Z"
+          },
+          "uco-observable:modifiedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T11:15:00Z"
+          },
+          "uco-observable:accessedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T11:10:00Z"
+          }
+        },
+        {
+          "@id": "kb:mftfacet-8142a6df-bddf-4095-9f27-c281bcf9e06d",
+          "@type": "uco-observable:MftRecordFacet",
+          "uco-observable:mftFileID": 200001,
+          "uco-observable:mftFlags": 32,
+          "uco-observable:mftParentID": 1001,
+          "uco-observable:ntfsHardLinkCount": 1,
+          "uco-observable:ntfsOwnerSID": "2001",
+          "uco-observable:mftRecordChangeTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T11:20:00Z"
+          },
+          "uco-observable:mftFileNameCreatedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T11:00:00Z"
+          },
+          "uco-observable:mftFileNameModifiedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T11:15:00Z"
+          },
+          "uco-observable:mftFileNameAccessedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T11:10:00Z"
+          },
+          "uco-observable:mftFileNameRecordChangeTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T11:20:00Z"
+          },
+          "uco-observable:mftFileNameLength": 20
+        },
+        {
+          "@id": "kb:mftdetailsfacet-76914ee3-9d1f-499c-be94-475ea74f2fde",
+          "@type": [
+            "acme:MFTDetailsFacet",
+            "uco-core:Facet"
+          ],
+          "acme:sequenceNumber": 9,
+          "acme:inUse": true,
+          "acme:hasADS": false,
+          "acme:ntfsNameType": "Windows",
+          "acme:updateSequenceNumber": 734036506,
+          "acme:logfileSequenceNumber": 2812140441
+        }
+      ]
+    },
+    {
+      "@id": "kb:file-3c4d5e6f-1111-2222-3333-444455556666",
+      "@type": "uco-observable:File",
+      "uco-core:hasFacet": [
+        {
+          "@id": "kb:filefacet-4c96737a-f9d7-456b-85e3-6a64348613ad",
+          "@type": "uco-observable:FileFacet",
+          "uco-observable:fileName": "7z2301.exe",
+          "uco-observable:extension": "exe",
+          "uco-observable:filePath": "C:\\Users\\Public\\Downloads\\7z2301.exe",
+          "uco-observable:isDirectory": false,
+          "uco-observable:sizeInBytes": 32768,
+          "uco-observable:observableCreatedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T12:00:00Z"
+          },
+          "uco-observable:modifiedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T12:15:00Z"
+          },
+          "uco-observable:accessedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T12:10:00Z"
+          }
+        },
+        {
+          "@id": "kb:mftfacet-749e23df-082a-4b94-8966-925745451824",
+          "@type": "uco-observable:MftRecordFacet",
+          "uco-observable:mftFileID": 200002,
+          "uco-observable:mftFlags": 32,
+          "uco-observable:mftParentID": 1002,
+          "uco-observable:ntfsHardLinkCount": 1,
+          "uco-observable:ntfsOwnerSID": "2002",
+          "uco-observable:mftRecordChangeTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T12:20:00Z"
+          },
+          "uco-observable:mftFileNameCreatedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T12:00:00Z"
+          },
+          "uco-observable:mftFileNameModifiedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T12:15:00Z"
+          },
+          "uco-observable:mftFileNameAccessedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T12:10:00Z"
+          },
+          "uco-observable:mftFileNameRecordChangeTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T12:20:00Z"
+          },
+          "uco-observable:mftFileNameLength": 10
+        },
+        {
+          "@id": "kb:mftdetailsfacet-db91cf59-76e1-4508-b764-218aebf7a529",
+          "@type": [
+            "acme:MFTDetailsFacet",
+            "uco-core:Facet"
+          ],
+          "acme:sequenceNumber": 2,
+          "acme:inUse": true,
+          "acme:hasADS": false,
+          "acme:ntfsNameType": "Windows",
+          "acme:updateSequenceNumber": 349817734,
+          "acme:logfileSequenceNumber": 9703905715
+        }
+      ]
+    },
+    {
+      "@id": "kb:file-4d5e6f70-1111-2222-3333-444455556666",
+      "@type": "uco-observable:File",
+      "uco-core:hasFacet": [
+        {
+          "@id": "kb:filefacet-8b070bb6-a9e2-4792-aa6a-5510e8c6c6d8",
+          "@type": "uco-observable:FileFacet",
+          "uco-observable:fileName": "readme.txt",
+          "uco-observable:extension": "txt",
+          "uco-observable:filePath": "C:\\Users\\Public\\Downloads\\readme.txt",
+          "uco-observable:isDirectory": false,
+          "uco-observable:sizeInBytes": 4096,
+          "uco-observable:observableCreatedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T13:00:00Z"
+          },
+          "uco-observable:modifiedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T13:15:00Z"
+          },
+          "uco-observable:accessedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T13:10:00Z"
+          }
+        },
+        {
+          "@id": "kb:mftfacet-5d5eba2a-f6ac-4a82-8251-da741810bfad",
+          "@type": "uco-observable:MftRecordFacet",
+          "uco-observable:mftFileID": 200003,
+          "uco-observable:mftFlags": 32,
+          "uco-observable:mftParentID": 1003,
+          "uco-observable:ntfsHardLinkCount": 1,
+          "uco-observable:ntfsOwnerSID": "2003",
+          "uco-observable:mftRecordChangeTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T13:20:00Z"
+          },
+          "uco-observable:mftFileNameCreatedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T13:00:00Z"
+          },
+          "uco-observable:mftFileNameModifiedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T13:15:00Z"
+          },
+          "uco-observable:mftFileNameAccessedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T13:10:00Z"
+          },
+          "uco-observable:mftFileNameRecordChangeTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T13:20:00Z"
+          },
+          "uco-observable:mftFileNameLength": 10
+        },
+        {
+          "@id": "kb:mftdetailsfacet-800609b2-c036-45f3-9941-b54e7fa5a85c",
+          "@type": [
+            "acme:MFTDetailsFacet",
+            "uco-core:Facet"
+          ],
+          "acme:sequenceNumber": 9,
+          "acme:inUse": false,
+          "acme:hasADS": false,
+          "acme:ntfsNameType": "Windows",
+          "acme:updateSequenceNumber": 336696312,
+          "acme:logfileSequenceNumber": 4733616459
+        }
+      ]
+    },
+    {
+      "@id": "kb:file-5e6f7081-1111-2222-3333-444455556666",
+      "@type": "uco-observable:File",
+      "uco-core:hasFacet": [
+        {
+          "@id": "kb:filefacet-4e782c0e-bf28-4f27-82ee-b95045f5d3c9",
+          "@type": "uco-observable:FileFacet",
+          "uco-observable:fileName": "report.pdf",
+          "uco-observable:extension": "pdf",
+          "uco-observable:filePath": "C:\\Users\\Public\\Downloads\\report.pdf",
+          "uco-observable:isDirectory": false,
+          "uco-observable:sizeInBytes": 4096,
+          "uco-observable:observableCreatedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T14:00:00Z"
+          },
+          "uco-observable:modifiedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T14:15:00Z"
+          },
+          "uco-observable:accessedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T14:10:00Z"
+          }
+        },
+        {
+          "@id": "kb:mftfacet-54eba6b4-a2a2-48d1-a755-e856697cc6a3",
+          "@type": "uco-observable:MftRecordFacet",
+          "uco-observable:mftFileID": 200004,
+          "uco-observable:mftFlags": 32,
+          "uco-observable:mftParentID": 1004,
+          "uco-observable:ntfsHardLinkCount": 1,
+          "uco-observable:ntfsOwnerSID": "2004",
+          "uco-observable:mftRecordChangeTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T14:20:00Z"
+          },
+          "uco-observable:mftFileNameCreatedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T14:00:00Z"
+          },
+          "uco-observable:mftFileNameModifiedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T14:15:00Z"
+          },
+          "uco-observable:mftFileNameAccessedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T14:10:00Z"
+          },
+          "uco-observable:mftFileNameRecordChangeTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T14:20:00Z"
+          },
+          "uco-observable:mftFileNameLength": 10
+        },
+        {
+          "@id": "kb:mftdetailsfacet-56753787-51d3-46a8-b5b4-2cf2b14e5924",
+          "@type": [
+            "acme:MFTDetailsFacet",
+            "uco-core:Facet"
+          ],
+          "acme:sequenceNumber": 7,
+          "acme:inUse": false,
+          "acme:hasADS": false,
+          "acme:ntfsNameType": "Windows",
+          "acme:updateSequenceNumber": 398362082,
+          "acme:logfileSequenceNumber": 1667779376
+        }
+      ]
+    },
+    {
+      "@id": "kb:file-6f708192-1111-2222-3333-444455556666",
+      "@type": "uco-observable:File",
+      "uco-core:hasFacet": [
+        {
+          "@id": "kb:filefacet-e0c145ca-fc4f-4ba0-9520-14aba196b622",
+          "@type": "uco-observable:FileFacet",
+          "uco-observable:fileName": "installer_notes.txt",
+          "uco-observable:extension": "txt",
+          "uco-observable:filePath": "C:\\Temp\\Installers\\installer_notes.txt",
+          "uco-observable:isDirectory": false,
+          "uco-observable:sizeInBytes": 20480,
+          "uco-observable:observableCreatedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T15:00:00Z"
+          },
+          "uco-observable:modifiedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T15:15:00Z"
+          },
+          "uco-observable:accessedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T15:10:00Z"
+          }
+        },
+        {
+          "@id": "kb:mftfacet-b0e6a984-4094-49d8-b866-97ca497ef8f8",
+          "@type": "uco-observable:MftRecordFacet",
+          "uco-observable:mftFileID": 200005,
+          "uco-observable:mftFlags": 32,
+          "uco-observable:mftParentID": 1005,
+          "uco-observable:ntfsHardLinkCount": 1,
+          "uco-observable:ntfsOwnerSID": "2005",
+          "uco-observable:mftRecordChangeTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T15:20:00Z"
+          },
+          "uco-observable:mftFileNameCreatedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T15:00:00Z"
+          },
+          "uco-observable:mftFileNameModifiedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T15:15:00Z"
+          },
+          "uco-observable:mftFileNameAccessedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T15:10:00Z"
+          },
+          "uco-observable:mftFileNameRecordChangeTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T15:20:00Z"
+          },
+          "uco-observable:mftFileNameLength": 19
+        },
+        {
+          "@id": "kb:mftdetailsfacet-03906e89-2667-4a01-a6dd-e4d16f31cadd",
+          "@type": [
+            "acme:MFTDetailsFacet",
+            "uco-core:Facet"
+          ],
+          "acme:sequenceNumber": 2,
+          "acme:inUse": true,
+          "acme:hasADS": false,
+          "acme:ntfsNameType": "Windows",
+          "acme:updateSequenceNumber": 507943839,
+          "acme:logfileSequenceNumber": 5710360983
+        }
+      ]
+    },
+    {
+      "@id": "kb:file-708192a3-1111-2222-3333-444455556666",
+      "@type": "uco-observable:File",
+      "uco-core:hasFacet": [
+        {
+          "@id": "kb:filefacet-3725894b-01ed-4480-8e49-eab77ab36865",
+          "@type": "uco-observable:FileFacet",
+          "uco-observable:fileName": "setupguide.pdf",
+          "uco-observable:extension": "pdf",
+          "uco-observable:filePath": "C:\\Temp\\Installers\\setupguide.pdf",
+          "uco-observable:isDirectory": false,
+          "uco-observable:sizeInBytes": 20480,
+          "uco-observable:observableCreatedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T16:00:00Z"
+          },
+          "uco-observable:modifiedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T16:15:00Z"
+          },
+          "uco-observable:accessedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T16:10:00Z"
+          }
+        },
+        {
+          "@id": "kb:mftfacet-8747c623-79f9-4f84-a818-20cafd77e80d",
+          "@type": "uco-observable:MftRecordFacet",
+          "uco-observable:mftFileID": 200006,
+          "uco-observable:mftFlags": 32,
+          "uco-observable:mftParentID": 1006,
+          "uco-observable:ntfsHardLinkCount": 1,
+          "uco-observable:ntfsOwnerSID": "2006",
+          "uco-observable:mftRecordChangeTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T16:20:00Z"
+          },
+          "uco-observable:mftFileNameCreatedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T16:00:00Z"
+          },
+          "uco-observable:mftFileNameModifiedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T16:15:00Z"
+          },
+          "uco-observable:mftFileNameAccessedTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T16:10:00Z"
+          },
+          "uco-observable:mftFileNameRecordChangeTime": {
+            "@type": "xsd:dateTime",
+            "@value": "2025-01-20T16:20:00Z"
+          },
+          "uco-observable:mftFileNameLength": 14
+        },
+        {
+          "@id": "kb:mftdetailsfacet-3b049ba5-2b25-405f-a479-46d262eed0f9",
+          "@type": [
+            "acme:MFTDetailsFacet",
+            "uco-core:Facet"
+          ],
+          "acme:sequenceNumber": 10,
+          "acme:inUse": false,
+          "acme:hasADS": false,
+          "acme:ntfsNameType": "Windows",
+          "acme:updateSequenceNumber": 966647391,
+          "acme:logfileSequenceNumber": 9776552803
+        }
+      ]
+    }
+  ]
+}
