@@ -53,6 +53,7 @@ Copy
     }
   ]
 }
+```
 Here is the JSON-LD output based on your scenario.
 Would you like to make any changes?
 Please validate the output using case_validate from the case_utils package to ensure compliance with the CASE/UCO ontology.
@@ -99,7 +100,7 @@ Use valid UCO/CASE properties where applicable.
 
 Here is the corrected JSON-LD:
 
-json
+```json
 Copy
 {
   "@context": {
@@ -145,6 +146,7 @@ Copy
     }
   ]
 }
+```
 Key Changes:
 Custom Facet Definition:
 
