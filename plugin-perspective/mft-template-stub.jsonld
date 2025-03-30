@@ -1,0 +1,81 @@
+{
+    "@context": {
+      "kb": "http://example.org/kb/",
+      "uco-core": "https://ontology.unifiedcyberontology.org/uco/core/",
+      "uco-observable": "https://ontology.unifiedcyberontology.org/uco/observable/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "acme": "http://example.org/custom#"
+    },
+    "@graph": [
+      {
+        "@id": "kb:StubFile",
+        "@type": "uco-observable:File",
+        "uco-core:hasFacet": []
+      },
+      {
+        "@id": "kb:StubFileFacet",
+        "@type": "uco-observable:FileFacet",
+        "uco-observable:fileName": null,
+        "uco-observable:extension": null,
+        "uco-observable:filePath": null,
+        "uco-observable:isDirectory": null,
+        "uco-observable:sizeInBytes": null,
+        "uco-observable:observableCreatedTime": {
+          "@type": "xsd:dateTime",
+          "@value": null
+        },
+        "uco-observable:modifiedTime": {
+          "@type": "xsd:dateTime",
+          "@value": null
+        },
+        "uco-observable:accessedTime": {
+          "@type": "xsd:dateTime",
+          "@value": null
+        }
+      },
+      {
+        "@id": "kb:StubMftRecordFacet",
+        "@type": "uco-observable:MftRecordFacet",
+        "uco-observable:mftFileID": null,
+        "uco-observable:mftFlags": null,
+        "uco-observable:mftParentID": null,
+        "uco-observable:ntfsHardLinkCount": null,
+        "uco-observable:ntfsOwnerSID": null,
+        "uco-observable:mftRecordChangeTime": {
+          "@type": "xsd:dateTime",
+          "@value": null
+        },
+        "uco-observable:mftFileNameCreatedTime": {
+          "@type": "xsd:dateTime",
+          "@value": null
+        },
+        "uco-observable:mftFileNameModifiedTime": {
+          "@type": "xsd:dateTime",
+          "@value": null
+        },
+        "uco-observable:mftFileNameAccessedTime": {
+          "@type": "xsd:dateTime",
+          "@value": null
+        },
+        "uco-observable:mftFileNameRecordChangeTime": {
+          "@type": "xsd:dateTime",
+          "@value": null
+        },
+        "uco-observable:mftFileNameLength": null
+      },
+      {
+        "@id": "kb:StubMFTDetailsFacet",
+        "@type": [
+          "acme:MFTDetailsFacet",
+          "uco-core:Facet"
+        ],
+        "acme:sequenceNumber": null,
+        "acme:inUse": null,
+        "acme:hasADS": null,
+        "acme:ntfsNameType": null,
+        "acme:updateSequenceNumber": null,
+        "acme:logfileSequenceNumber": null
+      }
+    ]
+  }
+  
