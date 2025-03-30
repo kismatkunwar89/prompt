@@ -1,0 +1,43 @@
+PREFIX uco-observable: <https://ontology.unifiedcyberontology.org/uco/observable/>
+PREFIX uco-core: <https://ontology.unifiedcyberontology.org/uco/core/>
+PREFIX acme: <http://example.org/custom#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?lnkPath ?lnkCreatedTime ?targetPath ?targetCreatedTime
+WHERE {
+  GRAPH <http://example.org/case2/artifact2-lnk> {
+    ?lnkFile a uco-observable:File ;
+             uco-core:hasFacet ?lnkFacet , ?lnkFileFacet .
+
+    ?lnkFacet a acme:LnkFacet ;
+              acme:targetPath ?targetPath .
+
+    ?lnkFileFacet a uco-observable:FileFacet ;
+                  uco-observable:filePath ?lnkPath .
+  }
+
+  GRAPH <http://example.org/case2/artifact1-mft> {
+    # Match .lnk entry by path
+    ?lnkMFTFile a uco-observable:File ;
+                uco-core:hasFacet ?lnkMFTFileFacet .
+
+    ?lnkMFTFileFacet a uco-observable:FileFacet ;
+                     uco-observable:filePath ?mftLnkPath ;
+                     uco-observable:observableCreatedTime ?lnkCreatedTime .
+
+    # Match target file by path
+    ?targetFile a uco-observable:File ;
+                uco-core:hasFacet ?targetFileFacet .
+
+    ?targetFileFacet a uco-observable:FileFacet ;
+                     uco-observable:filePath ?mftTargetPath ;
+                     uco-observable:observableCreatedTime ?targetCreatedTime .
+  }
+
+  # Case-insensitive match to avoid filePath issues
+  FILTER(LCASE(?lnkPath) = LCASE(?mftLnkPath))
+  FILTER(LCASE(?targetPath) = LCASE(?mftTargetPath))
+
+  # Contradiction logic
+  FILTER(xsd:dateTime(?lnkCreatedTime) < xsd:dateTime(?targetCreatedTime))
+}
